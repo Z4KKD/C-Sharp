@@ -1,9 +1,13 @@
-﻿namespace Practice
+﻿using Second_Practice;
+
+namespace Practice
 {
     class Program
     {
         static void Main(string[] args)
         {
+
+            /* Guessing Game
             string password = "ready";
             string guess = "";
             string first;
@@ -94,6 +98,32 @@
             Console.WriteLine("You lost!");
             Console.WriteLine("Press any key to escape.");
             Console.ReadKey();
+        }*/
+
+            Song song1 = new Song("Day n Nite", "Kid Cudi", 500, "PG");
+
+            Song song2 = new Song("Young, Wild & Free", "Wiz Khalifa", 200, "R");
+
+            Producer producer = new Producer();
+            producer.MakeUpbeat();
+
+            SeniorProducer seniorproducer = new SeniorProducer();
+            seniorproducer.MakeUpbeat();
+            seniorproducer.Custombeat();
+
+
+            try
+            {
+                Console.Write("Enter a number: ");
+                int num = Convert.ToInt32(Console.ReadLine());
+
+            }
+            catch
+            {
+                Console.WriteLine("Error with number");
+            }
+            Console.Write("Good bye");
+
         }
-     }
+    }
 }
